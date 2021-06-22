@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+    <body >
+        <img src="LOGO.png"  width="200" >
+        <form >
+        <div class="form"><h1> Feedback for Restaurant<h1></div>
+        <h3>
+        <br>
+            <fieldset class="detail" >
+                <legend >Personal Details</legend>
+                <label>First name: <input type="text" name="firstname" value="First_Name"></label> 
+                <label>Last name: <input type="text" name="lastname" value="Last_Name"></label><br/><br/>
+                <label>Phone Number: <input type="text" name="phone" ></label>
+                <label>Tel Number: <input type="text" name="phone"></label><br/>
+                <br><label>Email: <input type="text" name="email"></label>
+            </fieldset>
+        <br>
+            <fieldset >
+            <label for ="start">Date you ordered:</label>
+            <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2050-12-31">
+            <br><br>
+            <label for="payment">Mode of payment:</label>
+            <select name="payment:" >
+                <option value="Card">Debit/Credit</option>
+                <option value="Upi">Gpay </option>
+                <option value="Wallet">Paytm</option>
+                <option value="Cash">CASH</option>
+                </select>
+            <br><br>
+            <label for="Location">Branch:</label>
+            <select name="Location" >
+                <option value="mumbai">Mumbai</option>
+                <option value="Elctronics">Pune</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+            </fieldset>
+        <br>
+            <fieldset >
+            <p>Rate our Restaurant
+                <label><input type="radio" name="rate" value="5"> 5</label> 
+                <label><input type="radio" name="rate" value="4"> 4</label>
+                <label><input type="radio" name="rate" value="3"> 3</label> 
+                <label><input type="radio" name="rate" value="2"> 2</label>
+                <label><input type="radio" name="rate" value="1"> 1</label> 
+                <label><input type="radio" name="rate" value="0"> 0</label>
+            </p> 
+            <a>What did you liked ? 
+                <label><input type="checkbox" name="like" value="Food"> Food</label>
+                <label><input type="checkbox" name="like" value="Service"> Service</label>
+                <label><input type="checkbox" name="like" value="Hygiene"> Hygiene</label>
+                <label><input type="checkbox" name="like" value="Price"> Price</label>
+            </a>
+            <br><br>
+            <a for="comment">Any comments, questions or suggestions? : <br>
+                <textarea rows="2" cols="40" name="address" id="address"></textarea>
+            </a>
+            </fieldset>
+        <br>  
+        </div>
+        
+           <input type="submit" value="Submit" class="button" >
+           <input type="reset" value="Reset" class="button" >
+       
+            </h3> 
+            <h2>Thank you</h2>
+        </form>
+        
+    </body>
+</html>
